@@ -39,9 +39,11 @@ const Display = () => {
       <div className="count-container">
         <div className="ball-container">
           <h2>Balls</h2>
-          <p>{count.balls}</p>
+          <p data-testid="balls">{count.balls}</p>
         </div>
-        <div className="strike-container">{count.strikes}</div>
+        <div className="strike-container">
+          <p data-testid="strikes">{count.strikes}</p>
+        </div>
         <Dashboard
           addStrike={addStrike}
           addBall={addBall}
