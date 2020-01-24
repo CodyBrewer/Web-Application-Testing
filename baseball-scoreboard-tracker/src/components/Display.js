@@ -26,6 +26,14 @@ const Display = () => {
     setCount({ strikes: 0, balls: 9 });
   };
 
+  const foulBall = () => {
+    if (count.strikes === 2) {
+      return;
+    } else {
+      setCount({ strikes: count.strikes + 1, balls: count.balls });
+    }
+  };
+
   return (
     <>
       <div className="count-container">
