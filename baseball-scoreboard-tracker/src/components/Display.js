@@ -14,6 +14,18 @@ const Display = () => {
     }
   };
 
+  const addBall = () => {
+    if (count.balls === 3) {
+      resetCount();
+    } else {
+      setCount({ strikes: count.strikes, balls: count.balls + 1 });
+    }
+  };
+
+  const resetCount = () => {
+    setCount({ strikes: 0, balls: 9 });
+  };
+
   return (
     <>
       <div className="count-container">
