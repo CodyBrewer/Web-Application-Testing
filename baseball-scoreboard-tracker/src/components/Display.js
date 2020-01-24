@@ -23,7 +23,7 @@ const Display = () => {
   };
 
   const resetCount = () => {
-    setCount({ strikes: 0, balls: 9 });
+    setCount({ strikes: 0, balls: 0 });
   };
 
   const foulBall = () => {
