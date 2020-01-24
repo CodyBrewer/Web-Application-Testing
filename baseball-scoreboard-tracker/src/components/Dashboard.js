@@ -7,6 +7,7 @@ const Dashboard = props => {
         onClick={() => {
           props.addBall();
         }}
+        data-testid="ball-button"
       >
         Ball
       </button>
@@ -14,6 +15,7 @@ const Dashboard = props => {
         onClick={() => {
           props.addStrike();
         }}
+        data-testid="strike-button"
       >
         Strike
       </button>
@@ -21,6 +23,7 @@ const Dashboard = props => {
         onClick={() => {
           props.foulBall();
         }}
+        data-testid="foul-button"
       >
         Foul
       </button>
@@ -28,6 +31,7 @@ const Dashboard = props => {
         onClick={() => {
           props.resetCount();
         }}
+        data-testid="hit-button"
       >
         Hit
       </button>
