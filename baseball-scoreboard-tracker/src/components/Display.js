@@ -39,8 +39,15 @@ const Display = () => {
       <div className="count-container">
         <div className="ball-container">
           <h2>Balls</h2>
-          <p></p>
+          <p>{count.balls}</p>
         </div>
+        <div className="strike-container">{count.strikes}</div>
+        <Dashboard
+          addStrike={addStrike}
+          addBall={addBall}
+          resetCount={resetCount}
+          foulBall={foulBall}
+        />
       </div>
     </>
   );
